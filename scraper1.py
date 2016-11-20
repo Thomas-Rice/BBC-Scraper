@@ -136,22 +136,19 @@ def metadata(bsObj, iterator):
 	for section in metadata:
 		clean_data = section.findAll(True)
 		for item in clean_data:
+			text = item.get_text().encode("utf-8")
 			if item.attrs['class'][0] == 'recipe-metadata__heading':
-				text = item.get_text().encode("utf-8")
 				tmp[0] = text
 
 			if item.attrs['class'][0] == 'recipe-metadata__prep-time':
 				# print item.get_text()
-				text = item.get_text().encode("utf-8")
 				tmp[1] = text
 
 			if item.attrs['class'][0] == 'recipe-metadata__cook-time':
-				text = item.get_text().encode("utf-8")
 				# print item.get_text()
 				tmp[1] = text
 
 			if item.attrs['class'][0] == 'recipe-metadata__serving':
-				text = item.get_text().encode("utf-8")
 				# print item.get_text()
 				tmp[1] = text
 
