@@ -15,6 +15,13 @@ import sys
 # opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 # opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 
+
+'''
+To Start the Server:
+	- Cd into your mysql dir - ('/Applications/XAMPP/xamppfiles/bin') 
+	- mysql.server start
+'''
+
 pages = set()
 title_list = set()
 
